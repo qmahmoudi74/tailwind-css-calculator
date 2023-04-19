@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CALCULATOR</title>
+  </head>
+
+  <body class="font-mono">
+    <main class="fixed inset-0 flex items-center justify-center">
+      <section class="flex flex-col border-2 h-[48rem] w-[32rem]">
+        <header class="flex flex-col h-32">
+          <input
+            type="text"
+            id="experssion"
+            readonly
+            class="focus:outline-none px-4 py-2 w-full border-b"
+            placeholder="0"
+          />
+          <input
+            type="text"
+            placeholder="0"
+            id="input"
+            readonly
+            class="flex-1 focus:outline-none border-b text-5xl px-4 w-full"
+          />
+        </header>
+
+        <section id="buttons" class="flex-1 flex flex-col text-2xl">
+          <div class="flex-1 flex">
+            <button
+              value="C"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              C
+            </button>
+            <button
+              value="DEL"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              DEL
+            </button>
+            <button
+              value="%"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              %
+            </button>
+            <button
+              value="/"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              /
+            </button>
+          </div>
+
+          <div class="flex-1 flex">
+            <button
+              value="7"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              7
+            </button>
+            <button
+              value="8"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              8
+            </button>
+            <button
+              value="9"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              9
+            </button>
+            <button
+              value="*"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              *
+            </button>
+          </div>
+
+          <div class="flex-1 flex">
+            <button
+              value="4"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              4
+            </button>
+            <button
+              value="5"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              5
+            </button>
+            <button
+              value="6"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              6
+            </button>
+            <button
+              value="-"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              -
+            </button>
+          </div>
+
+          <div class="flex-1 flex">
+            <button
+              value="1"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              1
+            </button>
+            <button
+              value="2"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              2
+            </button>
+            <button
+              value="3"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              3
+            </button>
+            <button
+              value="+"
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              +
+            </button>
+          </div>
+
+          <div class="flex-1 flex">
+            <button
+              value="0"
+              class="w-2/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              0
+            </button>
+            <button
+              value="."
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              .
+            </button>
+            <button
+              value="="
+              class="w-1/4 flex items-center justify-center hover:shadow-lg active:shadow-none transition-shadow duration-200 border"
+            >
+              =
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
